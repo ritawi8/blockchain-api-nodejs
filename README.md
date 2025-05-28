@@ -6,6 +6,19 @@ I den första inlämningen ska ni skapa en node.js applikation som ska efterlikn
 Godkänt krav
 Applikationen ska byggas som ett REST API med endpoints för att kunna skapa block i en blockkedja. Det ska dessutom gå att lista alla block i en blockkedja samt hämta ut ett valfritt block ur blockkedjan.
 
+---
+
+Skapa block:
+Du kan skapa nya block i kedjan genom att göra en POST-förfrågan till /api/blocks/mine med data i JSON-form
+
+Lista alla block:
+Du kan lista alla block genom att göra en GET-förfrågan till /api/blocks
+
+Hämta valfritt block:
+Du kan hämta ett specifikt block genom att göra en GET-förfrågan till /api/blocks/hash/:hash där du ersätter :hash med det hash-värdet du vill söka efter.
+
+---
+
 Krav:
 
 Applikationen ska vara uppbyggd kring design mönstret MVC.
@@ -15,17 +28,14 @@ Loggning av fel ska skrivas till en fysisk fellogg
 ES6 moduler ska användas istället för CommonJS moduler.
 Skapandet av block ska ske test drivet(TDD)
 Varje block måste verifieras och valideras(“Proof Of Work”)
- 
 
 Väl godkänt krav
 För väl godkänt ska data i blocket vara av typen “complex object”, det vill säga antingen en instans av en klass eller ett anonymt objekt.
 Centraliserad felhantering måste användas
 Centraliserad loggning av applikationen måste användas
- 
 
 Klient
 Räcker med Postman
-
 
 Inlämningsuppgiften examinerar följande läranderesultat från kursplanen:
 
@@ -34,8 +44,8 @@ proof-of-work-baserade system
 skapa BackEnd Node.JS-servrar, med ett express-API och TDD
 VG-mål för uppgiften:
 
-Den studerande har nått samtliga lärandemål för kursen. Den studerande kan dessutom: 
+Den studerande har nått samtliga lärandemål för kursen. Den studerande kan dessutom:
 
 skapa blockchain-objekt som hanterar komplexa objekt
 förstå när du ska använda midleware och använda det på ett korrekt sätt
-Med högre kvalitet än för betyget G. 
+Med högre kvalitet än för betyget G.

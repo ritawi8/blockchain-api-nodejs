@@ -1,4 +1,5 @@
 import { app } from './app.mjs';
+import Blockchain from './models/Blockchain.mjs';
 import blockchainRoutes from './routes/blockchain-routes.mjs';
 
 app.use('/api/blocks/', blockchainRoutes);
