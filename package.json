@@ -2,11 +2,11 @@
 	"name": "blockchain-api-nodejs",
 	"version": "1.0.0",
 	"description": "Inlämningsuppgift\r I den första inlämningen ska ni skapa en node.js applikation som ska efterlikna en blockkedje applikation. Valet av namn och syfte är upp till er själva.",
-	"main": "index.js",
+	"main": "server.mjs",
 	"scripts": {
 		"test": "vitest",
-		"start": "node src/server.mjs",
-		"dev": "nodemon src/server.mjs"
+		"start": "node server.mjs",
+		"dev": "nodemon --watch src src/server.mjs"
 	},
 	"repository": {
 		"type": "git",
@@ -22,7 +22,9 @@
 	"dependencies": {
 		"dotenv": "^16.5.0",
 		"express": "^5.1.0",
-		"mongoose": "^8.15.1",
+		"mongoose": "^8.15.1"
+	},
+	"devDependencies": {
 		"nodemon": "^3.1.10",
 		"supertest": "^7.1.1",
 		"vitest": "^3.1.4"
