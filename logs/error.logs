@@ -1,1 +1,11 @@
 [2025-05-29 10:49:18] 404 Internal Server Error - Not Found - /api/doesnotexist - GET /api/doesnotexist
+[2025-05-29 14:20:48] 404 Internal Server Error - Not Found - /api/doesnotexist - GET /api/doesnotexist
+[2025-05-29 14:25:44] 404 Not Found - Not Found - /api/doesnotexist - GET /api/doesnotexist
+[2025-05-29 14:29:27] 404 Not Found - Not Found - /api/blocks/mine - POST /api/blocks/mine
+[2025-05-29 14:29:39] 404 Not Found - Not Found - /api/blocks/mine - POST /api/blocks/mine
+[2025-05-29 14:29:53] 404 Not Found - Not Found - /api/blocks/mine - POST /api/blocks/mine
+[2025-05-29 14:30:07] 404 Not Found - Not Found - /api/blocks/mine - POST /api/blocks/mine
+[2025-05-29 14:31:51] 404 Not Found - Not Found - /api/blocks/mine - POST /api/blocks/mine
+[2025-05-29 14:31:57] 404 Not Found - Not Found - /api/blocks/hash/0000b110343cb299fbe34e70d8520862d749802ffda1088b3364f77d24d55d22 - GET /api/blocks/hash/0000b110343cb299fbe34e70d8520862d749802ffda1088b3364f77d24d55d22
+[2025-05-29 14:32:03] 404 Not Found - Not Found - /api/blocks/ - GET /api/blocks/
+[2025-05-29 14:39:56] 404 Not Found - Not Found - /api/doesnotexist - GET /api/doesnotexist
