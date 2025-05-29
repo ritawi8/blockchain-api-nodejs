@@ -1,0 +1,25 @@
+[
+  {
+    "timestamp": 1748529138888,
+    "hash": "#1",
+    "lastHash": "#######",
+    "data": [],
+    "nonce": 0,
+    "difficulty": 5
+  },
+  {
+    "timestamp": 1748529148483,
+    "hash": "000017b121d347d346e90bc54a4d407bc7343159eaa01f757fe38beef7701688",
+    "lastHash": "#1",
+    "data": [
+      {
+        "name": "Hello"
+      },
+      {
+        "name": "Hej"
+      }
+    ],
+    "nonce": 64190,
+    "difficulty": 4
+  }
+]

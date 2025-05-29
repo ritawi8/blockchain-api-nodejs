@@ -1,23 +1,31 @@
 import Blockchain from '../models/Blockchain.mjs';
+import Storage from '../utilities/storage.mjs';
 
-const blockChain = new Blockchain();
+const storage = new Storage('data', 'blockchain.json');
 
-export const listAllBlocks = (req, res) => {
-	res.status(200).json({ success: true, data: blockChain.chain });
+// Lista alla block
+export const listAllBlocks = async (req, res) => {
+	const chain = await storage.readFromFile();
+	res.status(200).json({ success: true, data: chain });
 };
 
-export const addBlock = (req, res) => {
+// Lägg till ett block
+export const addBlock = async (req, res) => {
 	const { data } = req.body;
-	blockChain.addBlock({ data });
+	let chain = await storage.readFromFile();
+	const blockchain = new Blockchain(chain.length ? chain : undefined);
+	blockchain.addBlock({ data });
+	await storage.writeToFile(JSON.stringify(blockchain.chain, null, 2));
 	res
 		.status(201)
-		.json({ success: true, message: 'Block is added', data: blockChain });
+		.json({ success: true, message: 'Block is added', data: blockchain.chain });
 };
 
-export const getBlockByHash = (req, res) => {
+// Hämta block via hash
+export const getBlockByHash = async (req, res) => {
 	const { hash } = req.params;
-	// Hitta blocket med rätt hash
-	const block = blockChain.chain.find((block) => block.hash === hash);
+	const chain = await storage.readFromFile();
+	const block = chain.find((block) => block.hash === hash);
 
 	if (!block) {
 		return res

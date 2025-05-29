@@ -32,3 +32,6 @@ GET /api/blocks/ - 2025-05-29 14:39:31
 GET /api/blocks/hash/00012769c241cf2b139c0b981d6db9ad5ff3fa375890d164e2485ed1da8da34f - 2025-05-29 14:39:51
 GET /api/doesnotexist - 2025-05-29 14:39:56
 GET /api/blocks/hash/00012769c241cfb139c0b981d6db9ad5ff3fa375890d164e2485ed1da8da34f - 2025-05-29 14:40:27
+POST /api/blocks/mine - 2025-05-29 16:16:43
+POST /api/blocks/mine - 2025-05-29 16:32:26
+POST /api/blocks/mine - 2025-05-29 16:32:28
